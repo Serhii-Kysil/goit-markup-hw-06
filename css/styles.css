@@ -549,7 +549,8 @@ button {
 @media screen and (min-width: 1158px) {
   .teams-list {
     flex-wrap: nowrap;
-    column-gap: 0;
+    column-gap: 24px;
+    row-gap: 0px;
   }
 }
 
