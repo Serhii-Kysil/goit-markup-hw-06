@@ -185,15 +185,7 @@ body {
 .main-page-button:focus {
   background-color: #404bbf;
 }
-.second-section-head {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  margin-bottom: 8px;
-  margin-top: 0;
-}
+
 .paragraph-text {
   font-size: 16px;
   line-height: 1.5;
@@ -217,15 +209,7 @@ body {
   color: var(--paragraph-text-color);
   text-align: start;
 }
-.third-section-head {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--text-color);
-  margin-bottom: 72px;
-}
+
 .four-section {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -345,18 +329,7 @@ img {
 .second-section {
   padding: 120px 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .second-section-list {
   padding: 0;
   display: flex;
@@ -364,6 +337,25 @@ img {
 }
 .second-section-list-item {
   width: calc((100% - 72px) / 4);
+}
+.second-section-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.third-section-head {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-bottom: 72px;
 }
 .third-section {
   padding-bottom: 120px;
