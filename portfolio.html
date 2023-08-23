@@ -39,7 +39,9 @@
                 >Portfolio</a
               >
             </li>
-            <li><a class="nav-links link" href="">Contacts</a></li>
+            <li>
+              <a class="nav-links link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="header-address">
@@ -56,6 +58,10 @@
             </li>
           </ul>
         </address>
+
+        <svg width="32" height="22" class="header-mobile-menu">
+          <use href="/images/icons.svg#icon-header-menu"></use>
+        </svg>
       </div>
     </header>
     <main>
@@ -65,19 +71,19 @@
           <h1 class="visually-hidden">/</h1>
 
           <ul class="list buttons-list">
-            <li>
+            <li class="buttons-list-item">
               <button class="portfolio-buttons" type="button">All</button>
             </li>
-            <li>
+            <li class="buttons-list-item">
               <button class="portfolio-buttons" type="button">Web Site</button>
             </li>
-            <li>
+            <li class="buttons-list-item">
               <button class="portfolio-buttons" type="button">App</button>
             </li>
-            <li>
+            <li class="buttons-list-item">
               <button class="portfolio-buttons" type="button">Design</button>
             </li>
-            <li>
+            <li class="buttons-list-item">
               <button class="portfolio-buttons" type="button">Marketing</button>
             </li>
           </ul>
@@ -87,9 +93,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/banking.jpg    1x,
+                      ./images/portfolio/banking@2x.jpg 2x
+                    "
                     src="./images/portfolio/banking.jpg"
                     alt="Banking App"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -109,9 +118,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/cashless.jpg    1x,
+                      ./images/portfolio/cashless@2x.jpg 2x
+                    "
                     src="./images/portfolio/cashless.jpg"
                     alt="Cashless Payment"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -129,9 +141,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/meditation.jpg    1x,
+                      ./images/portfolio/meditation@2x.jpg 2x
+                    "
                     src="./images/portfolio/meditation.jpg"
                     alt="Meditation App"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -149,9 +164,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/taxi.jpg    1x,
+                      ./images/portfolio/taxi@2x.jpg 2x
+                    "
                     src="./images/portfolio/taxi.jpg"
                     alt="Taxi Service"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -169,9 +187,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/screen.jpg    1x,
+                      ./images/portfolio/screen@2x.jpg 2x
+                    "
                     src="./images/portfolio/screen.jpg"
                     alt="Screen Illustrations"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -189,9 +210,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
-                    src="./images/portfolio/courses.jpg"
+                    srcset="
+                      ./images/portfolio/online.jpg    1x,
+                      ./images/portfolio/online@2x.jpg 2x
+                    "
+                    src="./images/portfolio/online.jpg"
                     alt="Online Courses"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -209,9 +233,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
-                    src="./images/portfolio/instagramstories.jpg"
+                    srcset="
+                      ./images/portfolio/inst.jpg    1x,
+                      ./images/portfolio/inst@2x.jpg 2x
+                    "
+                    src="./images/portfolio/inst.jpg"
                     alt="Instagram Stories Concept"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -229,9 +256,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
-                    src="./images/portfolio/organicfood.jpg"
+                    srcset="
+                      ./images/portfolio/organic.jpg    1x,
+                      ./images/portfolio/organic@2x.jpg 2x
+                    "
+                    src="./images/portfolio/organic.jpg"
                     alt="Organic Food"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -249,9 +279,12 @@
               <a class="portfolio-links link" href="">
                 <div class="portfolio-img-cont">
                   <img
+                    srcset="
+                      ./images/portfolio/coffee.jpg    1x,
+                      ./images/portfolio/coffee@2x.jpg 2x
+                    "
                     src="./images/portfolio/coffee.jpg"
                     alt="Fresh Coffee"
-                    width="360"
                   />
                   <p class="portfolio-card-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -332,7 +365,7 @@
         </div>
 
         <div class="footer-form">
-          <p class="footer-social-media">Subscribe</p>
+          <p class="footer-form-head">Subscribe</p>
           <form class="sub-form" name="footer-subs-form">
             <label class="submit-label">
               <input
