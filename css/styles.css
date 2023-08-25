@@ -1132,6 +1132,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: flex;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
@@ -1353,15 +1354,13 @@ button {
   fill: #ffffff;
 }
 .modal-nav {
-  display: flex;
-  margin-top: 80px;
-  margin-left: 40px;
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 .modal-list {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
+  min-width: 100%;
+}
+.modal-list-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 .modal-link {
   font-family: Roboto;
@@ -1381,10 +1380,7 @@ button {
 .current-page-modal {
   color: #404bbf;
 }
-.modal-contacts {
-  margin-left: 40px;
-  margin-bottom: 48px;
-}
+
 .modal-tel-text {
   font-family: Roboto;
   font-size: 36px;
@@ -1409,6 +1405,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 48px;
 }
 .modal-mail-text {
   font-weight: 500;
@@ -1422,9 +1419,8 @@ button {
 
 .modal-social {
   display: flex;
-  margin-left: 40px;
   gap: 56px;
-  padding: 0;
+  height: 100%;
 }
 .modal-social-item {
   width: 40px;
@@ -1445,4 +1441,19 @@ button {
   background-color: transparent;
   cursor: pointer;
   border: none;
+}
+.modal-contact-box {
+  min-width: 100%;
+  height: 100%;
+  padding: 80px 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+.modal-social-box {
+  margin-bottom: 0;
 }
