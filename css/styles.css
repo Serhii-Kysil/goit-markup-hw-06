@@ -642,9 +642,7 @@ button {
   color: var(--text-color);
   margin-bottom: 72px;
 }
-.customer-container {
-  max-width: 582px;
-}
+
 .customers-list {
   display: flex;
   row-gap: 72px;
@@ -657,12 +655,19 @@ button {
   .customers-list {
     column-gap: 24px;
   }
+  .customer-container {
+    max-width: 582px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .customers-list {
     flex-wrap: nowrap;
     gap: 24px;
     row-gap: 0;
+    max-width: none;
+  }
+  .customer-container {
+    max-width: none;
   }
 }
 .customers-list-item {
@@ -738,7 +743,7 @@ button {
     align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-left: 0;
+    padding-left: 15px;
   }
 }
 .footer-logo-desc {
