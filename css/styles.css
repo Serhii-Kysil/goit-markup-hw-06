@@ -589,6 +589,11 @@ button {
   gap: 24px;
   padding: 0;
 }
+@media only screen and (max-width: 768px) {
+  .team-desc-list {
+    margin-bottom: 72px;
+  }
+}
 .team-desc-list-item {
   width: 40px;
   height: 40px;
