@@ -221,6 +221,7 @@ button {
 }
 .header-mobile-menu {
   stroke: #2e2f42;
+  fill: #2e2f42;
   display: flex;
   justify-content: center;
 }
