@@ -72,7 +72,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -110,6 +110,7 @@ button {
 .navigation {
   display: flex;
   align-items: center;
+  gap: 96px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -141,14 +142,9 @@ button {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 120px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .menu {
-    margin-left: 96px;
-  }
-}
+
 .nav-links {
   display: none;
 }
@@ -194,7 +190,7 @@ button {
   }
 }
 
-.header-address {
+.address-block {
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -320,7 +316,6 @@ button {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: #ffffff;
-  width: 320px;
   text-align: center;
   margin-bottom: 72px;
   margin: 0 auto;
@@ -436,7 +431,6 @@ button {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: var(--text-color);
-  width: 320px;
   text-align: center;
   margin-bottom: 8px;
   margin-left: auto;
@@ -628,6 +622,11 @@ button {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+@media screen and (min-width: 768px) {
+  .fifth-section {
+    padding: 96px 0;
+  }
+}
 
 @media screen and (min-width: 1158px) {
   .fifth-section {
@@ -642,6 +641,9 @@ button {
   line-height: 1.11;
   color: var(--text-color);
   margin-bottom: 72px;
+}
+.customer-container {
+  max-width: 582px;
 }
 .customers-list {
   display: flex;
@@ -728,6 +730,7 @@ button {
   .footer-container {
     flex-direction: row;
     align-items: flex-start;
+    padding-left: 108px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -735,6 +738,7 @@ button {
     align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 0;
   }
 }
 .footer-logo-desc {
@@ -839,10 +843,6 @@ button {
   background-color: #31d0aa;
 }
 
-.footer-form {
-  margin-top: 72px;
-}
-
 @media screen and (min-width: 1158px) {
   .footer-form {
     margin-left: 80px;
@@ -875,7 +875,8 @@ button {
 }
 
 .footer-email-input {
-  width: 398px;
+  min-width: 290px;
+  max-width: 398px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
